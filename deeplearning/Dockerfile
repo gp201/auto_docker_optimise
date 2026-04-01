@@ -32,7 +32,7 @@ RUN rm -rf "/home/${NB_USER}/.cache/" \
         "cuda-runtime~=12.4" \
         "cuda-nvcc~=12.4" \
         "cuda-cudart-dev~=12.4" \
-        "cuda-libraries-dev~=12.4" \
+        "cuda-libraries~=12.4" \
     && mamba clean --all -f -y \
     && sudo mkdir -p /usr/local/cuda \
     && sudo ln -s /opt/conda/* /usr/local/cuda/ \
