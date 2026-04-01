@@ -245,6 +245,8 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && rm -rf "${CONDA_DIR}/man" \
     && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/lib64/locale" \
     && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/lib64/gconv" \
+    && rm -rf "${CONDA_DIR}/targets" \
+    && rm -rf "${CONDA_DIR}/libexec/gcc" \
     && find "${CONDA_DIR}" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
