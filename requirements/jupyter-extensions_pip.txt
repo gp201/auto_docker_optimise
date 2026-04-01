@@ -1,0 +1,17 @@
+jupyterlab-code-formatter
+jupyterlab-github
+jupyterlab-git
+nbgitpuller
+# marimo
+marimo>=0.19.11
+marimo-jupyter-extension
+# jupyter AI magics and dependencies
+jupyter_ai
+ai21
+anthropic
+cohere
+huggingface_hub
+pillow
+ipywidgets
+openai 
+boto3

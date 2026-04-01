@@ -1,0 +1,26 @@
+r-arrow
+r-base
+r-biocmanager
+r-caret
+r-crayon
+r-devtools
+r-dplyr
+r-e1071 # dependency of the caret R package
+r-forecast
+r-ggrepel
+r-hexbin
+r-htmltools
+r-htmlwidgets
+r-irkernel
+r-nycflights13
+r-pak
+r-pheatmap
+r-randomforest
+r-rcurl
+r-rmarkdown
+r-rodbc
+r-rsqlite
+r-shiny
+r-tidymodels
+r-tidyverse
+unixodbc

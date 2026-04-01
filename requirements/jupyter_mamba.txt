@@ -1,0 +1,8 @@
+jupyterhub-singleuser
+jupyterlab
+nbclassic
+# Old versions of `notebook` (<v7) didn't have a restriction on the `jupyterlab` version
+# So old versions will get installed if version isn't pinned
+notebook>=7.2.2
+# proxy for R in the launcher
+jupyter-server-proxy
