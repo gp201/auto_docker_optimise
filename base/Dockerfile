@@ -266,6 +266,10 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && rm -rf "${CONDA_DIR}/share/gir-1.0" \
     && rm -rf "${CONDA_DIR}/share/easel" \
     && rm -rf "${CONDA_DIR}/lib/R/doc" \
+    && rm -rf "${CONDA_DIR}/lib/R/library/BH/include" \
+    && rm -rf "${CONDA_DIR}/lib/R/library/RcppArmadillo/include" \
+    && rm -rf "${CONDA_DIR}/lib/R/library/Rcpp/include" \
+    && rm -rf "${CONDA_DIR}/lib/R/library/translations" \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "help" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "html" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "demo" -exec rm -rf {} + 2>/dev/null || true \
