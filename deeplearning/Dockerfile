@@ -33,7 +33,11 @@ RUN rm -rf "/home/${NB_USER}/.cache/" \
     && mamba clean --all -f -y \
     && sudo mkdir -p /usr/local/cuda \
     && sudo ln -s /opt/conda/* /usr/local/cuda/ \
-    && python3 -m pip install --no-cache-dir -r "${REQUIREMENTS_DIR}/ai-ml_pip.txt"
+    && python3 -m pip install --no-cache-dir -r "${REQUIREMENTS_DIR}/ai-ml_pip.txt" \
+    && find "${CONDA_DIR}" -name '*.a' -delete \
+    && find "${CONDA_DIR}" -name '*.pyc' -delete \
+    && find "${CONDA_DIR}" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
+    && rm -rf "${CONDA_DIR}/pkgs"
 
 
 # ----------------------------

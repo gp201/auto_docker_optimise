@@ -30,6 +30,10 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/jupyter_mamba.txt" \
     && jupyter lab clean \
     && npm cache clean --force \
     && rm -rf "/home/${NB_USER}/.cache/yarn" \
+    && find "${CONDA_DIR}" -name '*.a' -delete \
+    && find "${CONDA_DIR}" -name '*.pyc' -delete \
+    && find "${CONDA_DIR}" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
+    && rm -rf "${CONDA_DIR}/pkgs" \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
 

@@ -103,6 +103,10 @@ RUN python3 -m pip install --no-cache-dir "cutadapt" \
     && mamba run -n igdiscover python3 -m pip install --no-cache-dir --no-deps -e . \
     && mamba run -n igdiscover python3 -m pip install --no-cache-dir "networkx==2.1" \
     && mamba clean --all -f -y \
+    && find "${CONDA_DIR}" -name '*.a' -delete \
+    && find "${CONDA_DIR}" -name '*.pyc' -delete \
+    && find "${CONDA_DIR}" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
+    && rm -rf "${CONDA_DIR}/pkgs" \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
 
