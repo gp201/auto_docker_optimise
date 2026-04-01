@@ -248,17 +248,17 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && rm -rf "${CONDA_DIR}/man" \
     && rm -rf "${CONDA_DIR}/share/info" \
     && rm -rf "${CONDA_DIR}/share/locale" \
-    && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/lib64/locale" \
-    && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/lib64/gconv" \
     && rm -rf "${CONDA_DIR}/libexec/gcc" \
-    && rm -f "${CONDA_DIR}/bin/x86_64-conda-linux-gnu-"* \
-    && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/usr" \
     && rm -rf "${CONDA_DIR}/lib/R/doc" \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "help" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "html" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "demo" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
     && rm -rf "${CONDA_DIR}/targets" \
+    && rm -rf /opt/conda/x86_64-conda-linux-gnu/sysroot/lib64/locale \
+    && rm -rf /opt/conda/x86_64-conda-linux-gnu/sysroot/lib64/gconv \
+    && rm -f /opt/conda/bin/x86_64-conda-linux-gnu-* \
+    && rm -rf /opt/conda/x86_64-conda-linux-gnu/sysroot/usr \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
 
