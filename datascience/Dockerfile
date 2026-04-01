@@ -110,8 +110,11 @@ RUN python3 -m pip install --no-cache-dir "cutadapt" \
     && find "${CONDA_DIR}" -name '*.a' -delete \
     && find "${CONDA_DIR}" -name '*.pyc' -delete \
     && find "${CONDA_DIR}" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
-    && find "${CONDA_DIR}/lib/python3.12/site-packages" -type d \( -name 'tests' -o -name 'test' \) -exec rm -rf {} + 2>/dev/null || true \
+    && find "${CONDA_DIR}" -type d \( -name 'tests' -o -name 'test' \) -path '*/site-packages/*' -exec rm -rf {} + 2>/dev/null || true \
     && rm -rf "${CONDA_DIR}/pkgs" \
+    && rm -rf "${CONDA_DIR}/envs/igdiscover/include" \
+    && find "${CONDA_DIR}/envs/igdiscover" -name '*.a' -delete \
+    && find "${CONDA_DIR}/envs/igdiscover" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
     && find "${CONDA_DIR}" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
