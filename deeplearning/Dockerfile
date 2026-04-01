@@ -29,7 +29,10 @@ USER ${NB_UID}
 COPY --chown=${NB_UID}:${NB_GID} ./requirements/ai-ml_pip.txt ${REQUIREMENTS_DIR}/ai-ml_pip.txt
 RUN rm -rf "/home/${NB_USER}/.cache/" \
     && mamba install --yes -c nvidia \
-        "cuda-toolkit~=12.4" \
+        "cuda-runtime~=12.4" \
+        "cuda-nvcc~=12.4" \
+        "cuda-cudart-dev~=12.4" \
+        "cuda-libraries-dev~=12.4" \
     && mamba clean --all -f -y \
     && sudo mkdir -p /usr/local/cuda \
     && sudo ln -s /opt/conda/* /usr/local/cuda/ \
