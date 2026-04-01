@@ -154,12 +154,8 @@ RUN echo "auth requisite pam_deny.so" >> /etc/pam.d/su \
     && fix-permissions "${HOME}" \
     && fix-permissions "${CONDA_DIR}" \
     && usermod -aG sudo ${NB_USER} \
-    && echo "${NB_USER}  ALL=(ALL) NOPASSWD:ALL" | tee /etc/sudoers.d/${NB_USER}
-
-# macOS Rosetta virtualization creates junk directory which gets owned by root further up.
-# It'll get re-created, but as USER runner after the next directive so hopefully should not cause permission issues.
-# More info: https://github.com/jupyter/docker-stacks/issues/2296
-RUN rm -rf "/home/${NB_USER}/.cache/"
+    && echo "${NB_USER}  ALL=(ALL) NOPASSWD:ALL" | tee /etc/sudoers.d/${NB_USER} \
+    && rm -rf "/home/${NB_USER}/.cache/"
 
 
 # ----------------------------
@@ -198,78 +194,44 @@ RUN set -x \
     # https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html#preventing-packages-from-updating-pinning
     && mamba list --full-name 'python' | awk 'END{sub("[^.]*$", "*", $2); print $1 " " $2}' >> "${CONDA_DIR}/conda-meta/pinned" \
     && mamba clean --all -f -y \
+    && mkdir -p ${REQUIREMENTS_DIR} \
+    && mkdir -p "/home/${NB_USER}/work" \
+    && rm -rf "/home/${NB_USER}/.cache/" \
     && fix-permissions "${CONDA_DIR}" \
+    && fix-permissions "${REQUIREMENTS_DIR}" \
     && fix-permissions "/home/${NB_USER}"
-
-
-# ----------------------------
-#         Directories
-# ----------------------------
-# Make requirements directory
-# And setup work directory for backward-compatibility
-RUN mkdir -p ${REQUIREMENTS_DIR} \
-    && mkdir "/home/${NB_USER}/work" \
-    && fix-permissions ${REQUIREMENTS_DIR} \
-    && fix-permissions "/home/${NB_USER}"
-
-# macOS Rosetta virtualization creates junk directory which gets owned by root further up.
-# It'll get re-created, but as USER runner after the next directive so hopefully should not cause permission issues.
-# More info: https://github.com/jupyter/docker-stacks/issues/2296
-RUN rm -rf "/home/${NB_USER}/.cache/"
 
 
 #-----------------
 #      SciPy
 #-----------------
 COPY --chown=${NB_UID}:${NB_GID} ./requirements/scipy_mamba.txt ${REQUIREMENTS_DIR}/scipy_mamba.txt
-RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
-    && mamba clean --all -f -y \
-    && fix-permissions "${CONDA_DIR}" \
-    && fix-permissions "/home/${NB_USER}"
-
-
-#-----------------------------
-#   ab[x] and dependencies
-#-----------------------------
 COPY --chown=${NB_UID}:${NB_GID} ./requirements/abx_pip.txt ${REQUIREMENTS_DIR}/abx_pip.txt
-RUN python3 -m pip install --no-cache-dir -r ${REQUIREMENTS_DIR}/abx_pip.txt
-
-# ab[x]
-# installed separately to prevent pip resolver issues
-RUN python3 -m pip install --no-cache-dir \
+COPY --chown=${NB_UID}:${NB_GID} ./requirements/r_mamba.txt ${REQUIREMENTS_DIR}/r_mamba.txt
+COPY --chown=${NB_UID}:${NB_GID} ./requirements/r_cran.txt ${REQUIREMENTS_DIR}/r_cran.txt
+RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
+    && mamba install --yes --file ${REQUIREMENTS_DIR}/r_mamba.txt \
+    && mamba clean --all -f -y \
+    #--- ab[x] and dependencies ---
+    && python3 -m pip install --no-cache-dir -r ${REQUIREMENTS_DIR}/abx_pip.txt \
+    && python3 -m pip install --no-cache-dir \
         "scab>=0.2.4" \
         abstar \
-        abutils
-
-
-#-----------------
-#       R
-#-----------------
-# R packages including IRKernel which gets installed globally.
-COPY --chown=${NB_UID}:${NB_GID} ./requirements/r_mamba.txt ${REQUIREMENTS_DIR}/r_mamba.txt
-RUN mamba install --yes --file ${REQUIREMENTS_DIR}/r_mamba.txt \
-    && mamba clean --all -f -y \
+        abutils \
+    #--- R: Bioconductor packages ---
+    && Rscript -e "BiocManager::install(c('biomaRt', 'DESeq2'), ask = FALSE, update = FALSE)" \
+    #--- R: CRAN packages ---
+    && MAKEFLAGS="-j$(nproc)" Rscript -e "\
+        pkgs <- scan('${REQUIREMENTS_DIR}/r_cran.txt', what = '', quiet = TRUE); \
+        install.packages( \
+            pkgs, \
+            dependencies = TRUE, \
+            repos = 'https://cran.rstudio.com' \
+        )" \
+    #--- cleanup ---
+    && rm -rf "/home/${NB_USER}/.cache/" \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
-
-# Install Bioconductor packages (BiocManager installed by mamba above)
-RUN Rscript -e "BiocManager::install(c('biomaRt', 'DESeq2'), ask = FALSE, update = FALSE)"
-
-# install R packages that are not available in mamba with CRAN
-# multi-thread compilation to speed up duckdb install - use 4 cores (25% of cores with xlarge runner)
-COPY --chown=${NB_UID}:${NB_GID} ./requirements/r_cran.txt ${REQUIREMENTS_DIR}/r_cran.txt
-RUN MAKEFLAGS="-j$(nproc)" Rscript -e "\
-  pkgs <- scan('${REQUIREMENTS_DIR}/r_cran.txt', what = '', quiet = TRUE); \
-  install.packages( \
-    pkgs, \
-    dependencies = TRUE, \
-    repos = 'https://cran.rstudio.com' \
-  )"
-
-# macOS Rosetta virtualization creates junk directory which gets owned by root further up.
-# It'll get re-created, but as USER runner after the next directive so hopefully should not cause permission issues.
-# More info: https://github.com/jupyter/docker-stacks/issues/2296
-RUN rm -rf "/home/${NB_USER}/.cache/"
 
 
 # ----------------------------
