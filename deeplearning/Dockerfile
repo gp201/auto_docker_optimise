@@ -36,7 +36,7 @@ RUN rm -rf "/home/${NB_USER}/.cache/" \
     && mamba clean --all -f -y \
     && sudo mkdir -p /usr/local/cuda \
     && sudo ln -s /opt/conda/* /usr/local/cuda/ \
-    && python3 -m pip install --no-cache-dir --no-deps torch --index-url https://download.pytorch.org/whl/cu124 \
+    && python3 -m pip install --no-cache-dir --no-deps --force-reinstall torch --index-url https://download.pytorch.org/whl/cu126 \
     && python3 -m pip install --no-cache-dir -r "${REQUIREMENTS_DIR}/ai-ml_pip.txt" \
     && find "${CONDA_DIR}" -name '*.a' -delete \
     && find "${CONDA_DIR}" -name '*.pyc' -delete \
