@@ -43,10 +43,7 @@ RUN rm -rf "/home/${NB_USER}/.cache/" \
     && find "${CONDA_DIR}/lib/python3.12/site-packages" -type d \( -name 'tests' -o -name 'test' \) -exec rm -rf {} + 2>/dev/null || true \
     && rm -rf "${CONDA_DIR}/lib/python3.12/site-packages/torch/include" \
     && rm -rf "${CONDA_DIR}/pkgs" \
-    && sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends binutils \
     && find "${CONDA_DIR}" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
-    && find "${CONDA_DIR}" -name '*.so.*' -exec strip --strip-unneeded {} + 2>/dev/null || true \
-    && sudo apt-get purge -y binutils && sudo apt-get autoremove -y && sudo rm -rf /var/lib/apt/lists/* \
     && rm -rf "${CONDA_DIR}/share/doc" "${CONDA_DIR}/share/man" "${CONDA_DIR}/share/gtk-doc" \
     && rm -rf "${CONDA_DIR}/targets/x86_64-linux/lib/stubs" \
     && rm -rf "${CONDA_DIR}/targets/x86_64-linux/include" \
