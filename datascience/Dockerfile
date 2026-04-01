@@ -113,6 +113,10 @@ RUN python3 -m pip install --no-cache-dir "cutadapt" \
     && find "${CONDA_DIR}" -type d \( -name 'tests' -o -name 'test' \) -path '*/site-packages/*' -exec rm -rf {} + 2>/dev/null || true \
     && rm -rf "${CONDA_DIR}/pkgs" \
     && rm -rf "${CONDA_DIR}/envs/igdiscover/include" \
+    && rm -rf "${CONDA_DIR}/envs/igdiscover/share/doc" \
+    && rm -rf "${CONDA_DIR}/envs/igdiscover/share/man" \
+    && rm -rf "${CONDA_DIR}/envs/igdiscover/share/info" \
+    && rm -rf "${CONDA_DIR}/envs/igdiscover/man" \
     && find "${CONDA_DIR}/envs/igdiscover" -name '*.a' -delete \
     && find "${CONDA_DIR}/envs/igdiscover" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
     && find "${CONDA_DIR}" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
