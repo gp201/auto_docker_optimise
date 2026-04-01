@@ -34,6 +34,7 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/jupyter_mamba.txt" \
     && find "${CONDA_DIR}" -name '*.pyc' -delete \
     && find "${CONDA_DIR}" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
     && rm -rf "${CONDA_DIR}/pkgs" \
+    && find "${CONDA_DIR}" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
 
