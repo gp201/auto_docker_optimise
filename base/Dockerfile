@@ -86,8 +86,7 @@ RUN apt-get update --yes \
         gnupg2 \
         # for cython: https://cython.readthedocs.io/en/latest/src/quickstart/install.html
         build-essential \
-        # for latex labels
-        cm-super \
+        # for latex labels (cm-super removed - uses Type1 fonts, very large)
         dvipng \
         # for matplotlib anim
         ffmpeg \
@@ -120,6 +119,8 @@ RUN apt-get update --yes \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/doc /usr/share/info \
     && find /usr/share/man -type f -delete \
+    && rm -rf /usr/share/texlive/texmf-dist/doc \
+    && rm -rf /usr/share/texmf/doc \
     && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen
 
