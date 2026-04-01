@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.5.2",
+  "checkpoint_id": "538807c68b2c",
+  "strategy": "manual-commit",
+  "branch": "optimize/apr1",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "base/Dockerfile"
+  ],
+  "sessions": [
+    {
+      "metadata": "/53/8807c68b2c/0/metadata.json",
+      "transcript": "/53/8807c68b2c/0/full.jsonl",
+      "content_hash": "/53/8807c68b2c/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 6,
+    "cache_creation_tokens": 2925,
+    "cache_read_tokens": 626847,
+    "output_tokens": 1251,
+    "api_call_count": 6
+  }
+}
