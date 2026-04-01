@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.5.2",
+  "checkpoint_id": "bee88694e677",
+  "strategy": "manual-commit",
+  "branch": "optimize/apr1",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "deeplearning/Dockerfile"
+  ],
+  "sessions": [
+    {
+      "metadata": "/be/e88694e677/0/metadata.json",
+      "transcript": "/be/e88694e677/0/full.jsonl",
+      "content_hash": "/be/e88694e677/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 13,
+    "cache_creation_tokens": 5094,
+    "cache_read_tokens": 2703448,
+    "output_tokens": 2637,
+    "api_call_count": 13
+  }
+}
