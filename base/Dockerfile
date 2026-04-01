@@ -273,6 +273,7 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "help" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "html" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "demo" -exec rm -rf {} + 2>/dev/null || true \
+    && find "${CONDA_DIR}/lib/R/library" -type d -name "doc" -exec rm -rf {} + 2>/dev/null || true \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
 
