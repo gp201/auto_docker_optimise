@@ -31,7 +31,6 @@ RUN rm -rf "/home/${NB_USER}/.cache/" \
     && mamba install --yes -c nvidia \
         "cuda-runtime~=12.4" \
         "cuda-nvcc~=12.4" \
-        "cuda-cudart-dev~=12.4" \
         "cuda-libraries~=12.4" \
     && mamba clean --all -f -y \
     && sudo mkdir -p /usr/local/cuda \
