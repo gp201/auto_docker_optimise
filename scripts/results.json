@@ -1,0 +1,1829 @@
+[
+  {
+    "timestamp": "2026-04-01T07:37:19.080826+00:00",
+    "label": "baseline",
+    "sizes_mb": {
+      "reduce-docker/base": 16988.5,
+      "reduce-docker/datascience": 23838.15,
+      "reduce-docker/deeplearning": 23899.96,
+      "reduce-docker/jupyterhub-datascience": 24529.98,
+      "reduce-docker/jupyterhub-deeplearning": 26000.75
+    },
+    "total_mb": 115257.34,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 4.4,
+    "iteration": 0
+  },
+  {
+    "timestamp": "2026-04-01T07:58:58.808468+00:00",
+    "label": "combine-base-run-layers",
+    "sizes_mb": {
+      "reduce-docker/base": 11283.84,
+      "reduce-docker/datascience": 18131.64,
+      "reduce-docker/deeplearning": 18195.3,
+      "reduce-docker/jupyterhub-datascience": 18823.48,
+      "reduce-docker/jupyterhub-deeplearning": 20294.09
+    },
+    "total_mb": 86728.35,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 1141.9,
+    "iteration": 1
+  },
+  {
+    "timestamp": "2026-04-01T07:58:58.809572+00:00",
+    "label": "combine-base-run-layers",
+    "sizes_mb": {
+      "reduce-docker/base": 11283.84,
+      "reduce-docker/datascience": 18131.64,
+      "reduce-docker/deeplearning": 18195.3,
+      "reduce-docker/jupyterhub-datascience": 18823.48,
+      "reduce-docker/jupyterhub-deeplearning": 20294.09
+    },
+    "total_mb": 86728.35,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 531.1,
+    "iteration": 2
+  },
+  {
+    "timestamp": "2026-04-01T08:01:43.708832+00:00",
+    "label": "combine-datascience-layers",
+    "sizes_mb": {
+      "reduce-docker/base": 11283.84,
+      "reduce-docker/datascience": 18131.64,
+      "reduce-docker/deeplearning": 18195.3,
+      "reduce-docker/jupyterhub-datascience": 18823.48,
+      "reduce-docker/jupyterhub-deeplearning": 20294.09
+    },
+    "total_mb": 86728.35,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "failed",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 78.7,
+    "iteration": 3
+  },
+  {
+    "timestamp": "2026-04-01T08:07:51.031146+00:00",
+    "label": "combine-datascience-layers-v2",
+    "sizes_mb": {
+      "reduce-docker/base": 11283.84,
+      "reduce-docker/datascience": 18010.33,
+      "reduce-docker/deeplearning": 18195.3,
+      "reduce-docker/jupyterhub-datascience": 18639.3,
+      "reduce-docker/jupyterhub-deeplearning": 20294.09
+    },
+    "total_mb": 86422.86,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 279.6,
+    "iteration": 4
+  },
+  {
+    "timestamp": "2026-04-01T08:10:53.822117+00:00",
+    "label": "combine-jupyterhub-layers",
+    "sizes_mb": {
+      "reduce-docker/base": 11283.84,
+      "reduce-docker/datascience": 18010.33,
+      "reduce-docker/deeplearning": 18195.3,
+      "reduce-docker/jupyterhub-datascience": 18639.22,
+      "reduce-docker/jupyterhub-deeplearning": 20293.92
+    },
+    "total_mb": 86422.61,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 92.6,
+    "iteration": 5
+  },
+  {
+    "timestamp": "2026-04-01T08:14:32.351317+00:00",
+    "label": "combine-deeplearning-layers",
+    "sizes_mb": {
+      "reduce-docker/base": 11283.84,
+      "reduce-docker/datascience": 18010.33,
+      "reduce-docker/deeplearning": 18195.29,
+      "reduce-docker/jupyterhub-datascience": 18639.22,
+      "reduce-docker/jupyterhub-deeplearning": 20293.9
+    },
+    "total_mb": 86422.58,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 171.4,
+    "iteration": 6
+  },
+  {
+    "timestamp": "2026-04-01T08:18:10.203136+00:00",
+    "label": "cuda-toolkit-only",
+    "sizes_mb": {
+      "reduce-docker/base": 11283.84,
+      "reduce-docker/datascience": 18010.33,
+      "reduce-docker/deeplearning": 18195.28,
+      "reduce-docker/jupyterhub-datascience": 18639.22,
+      "reduce-docker/jupyterhub-deeplearning": 20293.89
+    },
+    "total_mb": 86422.56,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 188.1,
+    "iteration": 7
+  },
+  {
+    "timestamp": "2026-04-01T08:35:05.678691+00:00",
+    "label": "remove-docs-pycache-static",
+    "sizes_mb": {
+      "reduce-docker/base": 10594.94,
+      "reduce-docker/datascience": 18010.33,
+      "reduce-docker/deeplearning": 17514.74,
+      "reduce-docker/jupyterhub-datascience": 18639.22,
+      "reduce-docker/jupyterhub-deeplearning": 19628.84
+    },
+    "total_mb": 84388.07,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "failed",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 365.8,
+    "iteration": 8
+  },
+  {
+    "timestamp": "2026-04-01T08:35:06.689757+00:00",
+    "label": "remove-docs-pycache-static",
+    "sizes_mb": {
+      "reduce-docker/base": 10594.94,
+      "reduce-docker/datascience": 18010.33,
+      "reduce-docker/deeplearning": 17514.74,
+      "reduce-docker/jupyterhub-datascience": 18639.22,
+      "reduce-docker/jupyterhub-deeplearning": 19628.84
+    },
+    "total_mb": 84388.07,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "failed",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 972.9,
+    "iteration": 9
+  },
+  {
+    "timestamp": "2026-04-01T08:57:57.431729+00:00",
+    "label": "remove-docs-pycache-static-v2",
+    "sizes_mb": {
+      "reduce-docker/base": 10594.94,
+      "reduce-docker/datascience": 17333.13,
+      "reduce-docker/deeplearning": 17514.74,
+      "reduce-docker/jupyterhub-datascience": 17968.53,
+      "reduce-docker/jupyterhub-deeplearning": 19628.84
+    },
+    "total_mb": 83040.18,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 1323.1,
+    "iteration": 10
+  },
+  {
+    "timestamp": "2026-04-01T08:57:58.361127+00:00",
+    "label": "remove-docs-pycache-static-v2",
+    "sizes_mb": {
+      "reduce-docker/base": 10594.94,
+      "reduce-docker/datascience": 17333.13,
+      "reduce-docker/deeplearning": 17514.74,
+      "reduce-docker/jupyterhub-datascience": 17968.53,
+      "reduce-docker/jupyterhub-deeplearning": 19628.84
+    },
+    "total_mb": 83040.18,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 718.6,
+    "iteration": 11
+  },
+  {
+    "timestamp": "2026-04-01T08:58:26.264912+00:00",
+    "label": "remove-docs-pycache-static-v2",
+    "sizes_mb": {
+      "reduce-docker/base": 10594.94,
+      "reduce-docker/datascience": 17333.13,
+      "reduce-docker/deeplearning": 17514.74,
+      "reduce-docker/jupyterhub-datascience": 17968.53,
+      "reduce-docker/jupyterhub-deeplearning": 19628.84
+    },
+    "total_mb": 83040.18,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 140.3,
+    "iteration": 12
+  },
+  {
+    "timestamp": "2026-04-01T09:03:23.692567+00:00",
+    "label": "cleanup-all-child-images",
+    "sizes_mb": {
+      "reduce-docker/base": 10594.94,
+      "reduce-docker/datascience": 17236.83,
+      "reduce-docker/deeplearning": 17128.4,
+      "reduce-docker/jupyterhub-datascience": 17800.79,
+      "reduce-docker/jupyterhub-deeplearning": 18994.58
+    },
+    "total_mb": 81755.54,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 223.9,
+    "iteration": 13
+  },
+  {
+    "timestamp": "2026-04-01T09:09:05.157845+00:00",
+    "label": "remove-custom-zlib",
+    "sizes_mb": {
+      "reduce-docker/base": 10594.94,
+      "reduce-docker/datascience": 17235.96,
+      "reduce-docker/deeplearning": 17128.4,
+      "reduce-docker/jupyterhub-datascience": 17799.92,
+      "reduce-docker/jupyterhub-deeplearning": 18994.58
+    },
+    "total_mb": 81753.8,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 276.5,
+    "iteration": 14
+  },
+  {
+    "timestamp": "2026-04-01T09:26:52.381452+00:00",
+    "label": "strip-libs-remove-build-deps",
+    "sizes_mb": {
+      "reduce-docker/base": 9907.8,
+      "reduce-docker/datascience": 16569.85,
+      "reduce-docker/deeplearning": 16441.26,
+      "reduce-docker/jupyterhub-datascience": 17133.81,
+      "reduce-docker/jupyterhub-deeplearning": 18307.44
+    },
+    "total_mb": 78360.16,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 388.8,
+    "iteration": 15
+  },
+  {
+    "timestamp": "2026-04-01T09:26:58.703869+00:00",
+    "label": "strip-libs-remove-build-deps",
+    "sizes_mb": {
+      "reduce-docker/base": 9907.8,
+      "reduce-docker/datascience": 16569.85,
+      "reduce-docker/deeplearning": 16441.26,
+      "reduce-docker/jupyterhub-datascience": 17133.81,
+      "reduce-docker/jupyterhub-deeplearning": 18307.44
+    },
+    "total_mb": 78360.16,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 1001.7,
+    "iteration": 16
+  },
+  {
+    "timestamp": "2026-04-01T09:44:45.293453+00:00",
+    "label": "remove-cm-super-texlive-docs",
+    "sizes_mb": {
+      "reduce-docker/base": 9846.7,
+      "reduce-docker/datascience": 16508.72,
+      "reduce-docker/deeplearning": 16380.16,
+      "reduce-docker/jupyterhub-datascience": 17072.68,
+      "reduce-docker/jupyterhub-deeplearning": 18246.34
+    },
+    "total_mb": 78054.6,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 1032.8,
+    "iteration": 17
+  },
+  {
+    "timestamp": "2026-04-01T09:44:45.313294+00:00",
+    "label": "remove-cm-super-texlive-docs",
+    "sizes_mb": {
+      "reduce-docker/base": 9846.7,
+      "reduce-docker/datascience": 16508.72,
+      "reduce-docker/deeplearning": 16380.16,
+      "reduce-docker/jupyterhub-datascience": 17072.68,
+      "reduce-docker/jupyterhub-deeplearning": 18246.34
+    },
+    "total_mb": 78054.6,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 427.1,
+    "iteration": 18
+  },
+  {
+    "timestamp": "2026-04-01T09:47:47.655242+00:00",
+    "label": "cuda-runtime-only",
+    "sizes_mb": {
+      "reduce-docker/base": 9846.7,
+      "reduce-docker/datascience": 16508.72,
+      "reduce-docker/deeplearning": 14794.46,
+      "reduce-docker/jupyterhub-datascience": 17072.68,
+      "reduce-docker/jupyterhub-deeplearning": 16657.3
+    },
+    "total_mb": 74879.86,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 150.5,
+    "iteration": 19
+  },
+  {
+    "timestamp": "2026-04-01T09:52:01.417077+00:00",
+    "label": "strip-all-child-images",
+    "sizes_mb": {
+      "reduce-docker/base": 9846.7,
+      "reduce-docker/datascience": 16508.72,
+      "reduce-docker/deeplearning": 14791.1,
+      "reduce-docker/jupyterhub-datascience": 17072.68,
+      "reduce-docker/jupyterhub-deeplearning": 16653.94
+    },
+    "total_mb": 74873.14,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 213.7,
+    "iteration": 20
+  },
+  {
+    "timestamp": "2026-04-01T10:08:05.286014+00:00",
+    "label": "cpu-only-torch-in-base",
+    "sizes_mb": {
+      "reduce-docker/base": 6493.1,
+      "reduce-docker/datascience": 13155.12,
+      "reduce-docker/deeplearning": 11437.51,
+      "reduce-docker/jupyterhub-datascience": 13719.08,
+      "reduce-docker/jupyterhub-deeplearning": 13300.34
+    },
+    "total_mb": 58105.15,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 882.1,
+    "iteration": 21
+  },
+  {
+    "timestamp": "2026-04-01T10:08:06.231645+00:00",
+    "label": "cpu-only-torch-in-base",
+    "sizes_mb": {
+      "reduce-docker/base": 6493.1,
+      "reduce-docker/datascience": 13155.12,
+      "reduce-docker/deeplearning": 11437.51,
+      "reduce-docker/jupyterhub-datascience": 13719.08,
+      "reduce-docker/jupyterhub-deeplearning": 13300.34
+    },
+    "total_mb": 58105.15,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 278.0,
+    "iteration": 22
+  },
+  {
+    "timestamp": "2026-04-01T10:12:12.308445+00:00",
+    "label": "remove-cuda-dev-headers",
+    "sizes_mb": {
+      "reduce-docker/base": 6493.1,
+      "reduce-docker/datascience": 13155.12,
+      "reduce-docker/deeplearning": 11405.22,
+      "reduce-docker/jupyterhub-datascience": 13719.08,
+      "reduce-docker/jupyterhub-deeplearning": 13267.89
+    },
+    "total_mb": 58040.41,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 149.5,
+    "iteration": 23
+  },
+  {
+    "timestamp": "2026-04-01T10:15:13.294206+00:00",
+    "label": "remove-nvrtc-alt",
+    "sizes_mb": {
+      "reduce-docker/base": 6493.1,
+      "reduce-docker/datascience": 13155.12,
+      "reduce-docker/deeplearning": 11296.59,
+      "reduce-docker/jupyterhub-datascience": 13719.08,
+      "reduce-docker/jupyterhub-deeplearning": 13159.27
+    },
+    "total_mb": 57823.16,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 139.0,
+    "iteration": 24
+  },
+  {
+    "timestamp": "2026-04-01T10:30:31.384168+00:00",
+    "label": "remove-sysroot-locale",
+    "sizes_mb": {
+      "reduce-docker/base": 6046.38,
+      "reduce-docker/datascience": 12708.4,
+      "reduce-docker/deeplearning": 10849.87,
+      "reduce-docker/jupyterhub-datascience": 13272.35,
+      "reduce-docker/jupyterhub-deeplearning": 12712.54
+    },
+    "total_mb": 55589.54,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 241.9,
+    "iteration": 25
+  },
+  {
+    "timestamp": "2026-04-01T10:30:31.406047+00:00",
+    "label": "remove-sysroot-locale",
+    "sizes_mb": {
+      "reduce-docker/base": 6046.38,
+      "reduce-docker/datascience": 12708.4,
+      "reduce-docker/deeplearning": 10849.87,
+      "reduce-docker/jupyterhub-datascience": 13272.35,
+      "reduce-docker/jupyterhub-deeplearning": 12712.54
+    },
+    "total_mb": 55589.54,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 846.5,
+    "iteration": 26
+  },
+  {
+    "timestamp": "2026-04-01T10:46:01.457029+00:00",
+    "label": "remove-targets-gcc-from-base",
+    "sizes_mb": {
+      "reduce-docker/base": 5385.95,
+      "reduce-docker/datascience": 12047.97,
+      "reduce-docker/deeplearning": 10189.45,
+      "reduce-docker/jupyterhub-datascience": 12611.93,
+      "reduce-docker/jupyterhub-deeplearning": 12052.12
+    },
+    "total_mb": 52287.42,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 243.1,
+    "iteration": 27
+  },
+  {
+    "timestamp": "2026-04-01T10:46:03.142780+00:00",
+    "label": "remove-targets-gcc-from-base",
+    "sizes_mb": {
+      "reduce-docker/base": 5385.95,
+      "reduce-docker/datascience": 12047.97,
+      "reduce-docker/deeplearning": 10189.45,
+      "reduce-docker/jupyterhub-datascience": 12611.93,
+      "reduce-docker/jupyterhub-deeplearning": 12052.12
+    },
+    "total_mb": 52287.42,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 850.5,
+    "iteration": 28
+  },
+  {
+    "timestamp": "2026-04-01T11:01:22.864451+00:00",
+    "label": "remove-r-docs",
+    "sizes_mb": {
+      "reduce-docker/base": 5310.4,
+      "reduce-docker/datascience": 11972.42,
+      "reduce-docker/deeplearning": 10113.9,
+      "reduce-docker/jupyterhub-datascience": 12536.38,
+      "reduce-docker/jupyterhub-deeplearning": 11976.57
+    },
+    "total_mb": 51909.67,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 877.0,
+    "iteration": 29
+  },
+  {
+    "timestamp": "2026-04-01T11:08:16.104588+00:00",
+    "label": "strip-dorado-remove-cellranger-samples",
+    "sizes_mb": {
+      "reduce-docker/base": 5310.4,
+      "reduce-docker/datascience": 11608.81,
+      "reduce-docker/deeplearning": 10113.9,
+      "reduce-docker/jupyterhub-datascience": 12172.76,
+      "reduce-docker/jupyterhub-deeplearning": 11976.57
+    },
+    "total_mb": 51182.44,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 343.3,
+    "iteration": 30
+  },
+  {
+    "timestamp": "2026-04-01T11:13:58.566968+00:00",
+    "label": "strip-cellranger-libs",
+    "sizes_mb": {
+      "reduce-docker/base": 5310.4,
+      "reduce-docker/datascience": 11434.04,
+      "reduce-docker/deeplearning": 10113.9,
+      "reduce-docker/jupyterhub-datascience": 11997.99,
+      "reduce-docker/jupyterhub-deeplearning": 11976.57
+    },
+    "total_mb": 50832.9,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 301.3,
+    "iteration": 31
+  },
+  {
+    "timestamp": "2026-04-01T11:29:10.820535+00:00",
+    "label": "remove-cross-compiler-tools",
+    "sizes_mb": {
+      "reduce-docker/base": 5261.29,
+      "reduce-docker/datascience": 11384.92,
+      "reduce-docker/deeplearning": 10064.78,
+      "reduce-docker/jupyterhub-datascience": 11948.88,
+      "reduce-docker/jupyterhub-deeplearning": 11927.45
+    },
+    "total_mb": 50587.32,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 273.5,
+    "iteration": 32
+  },
+  {
+    "timestamp": "2026-04-01T11:29:15.302570+00:00",
+    "label": "remove-cross-compiler-tools",
+    "sizes_mb": {
+      "reduce-docker/base": 5261.29,
+      "reduce-docker/datascience": 11384.92,
+      "reduce-docker/deeplearning": 10064.78,
+      "reduce-docker/jupyterhub-datascience": 11948.88,
+      "reduce-docker/jupyterhub-deeplearning": 11927.45
+    },
+    "total_mb": 50587.32,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 883.0,
+    "iteration": 33
+  },
+  {
+    "timestamp": "2026-04-01T11:42:58.586717+00:00",
+    "label": "remove-conda-info-locale",
+    "sizes_mb": {
+      "reduce-docker/base": 5242.69,
+      "reduce-docker/datascience": 11366.33,
+      "reduce-docker/deeplearning": 10046.19,
+      "reduce-docker/jupyterhub-datascience": 11930.29,
+      "reduce-docker/jupyterhub-deeplearning": 11908.86
+    },
+    "total_mb": 50494.36,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 796.9,
+    "iteration": 34
+  },
+  {
+    "timestamp": "2026-04-01T11:43:00.114458+00:00",
+    "label": "remove-conda-info-locale",
+    "sizes_mb": {
+      "reduce-docker/base": 5242.69,
+      "reduce-docker/datascience": 11366.33,
+      "reduce-docker/deeplearning": 10046.19,
+      "reduce-docker/jupyterhub-datascience": 11930.29,
+      "reduce-docker/jupyterhub-deeplearning": 11908.86
+    },
+    "total_mb": 50494.36,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 190.6,
+    "iteration": 35
+  },
+  {
+    "timestamp": "2026-04-01T11:57:37.752539+00:00",
+    "label": "remove-python-test-dirs",
+    "sizes_mb": {
+      "reduce-docker/base": 5079.9,
+      "reduce-docker/datascience": 11203.54,
+      "reduce-docker/deeplearning": 9883.4,
+      "reduce-docker/jupyterhub-datascience": 11767.47,
+      "reduce-docker/jupyterhub-deeplearning": 11746.05
+    },
+    "total_mb": 49680.36,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 841.7,
+    "iteration": 36
+  },
+  {
+    "timestamp": "2026-04-01T11:57:41.250756+00:00",
+    "label": "remove-python-test-dirs",
+    "sizes_mb": {
+      "reduce-docker/base": 5079.9,
+      "reduce-docker/datascience": 11203.54,
+      "reduce-docker/deeplearning": 9883.4,
+      "reduce-docker/jupyterhub-datascience": 11767.47,
+      "reduce-docker/jupyterhub-deeplearning": 11746.05
+    },
+    "total_mb": 49680.36,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 239.3,
+    "iteration": 37
+  },
+  {
+    "timestamp": "2026-04-01T12:11:48.665675+00:00",
+    "label": "remove-torch-dev-files",
+    "sizes_mb": {
+      "reduce-docker/base": 4989.45,
+      "reduce-docker/datascience": 11113.09,
+      "reduce-docker/deeplearning": 9792.94,
+      "reduce-docker/jupyterhub-datascience": 11677.02,
+      "reduce-docker/jupyterhub-deeplearning": 11655.59
+    },
+    "total_mb": 49228.09,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 810.8,
+    "iteration": 38
+  },
+  {
+    "timestamp": "2026-04-01T12:11:53.241575+00:00",
+    "label": "remove-torch-dev-files",
+    "sizes_mb": {
+      "reduce-docker/base": 4989.45,
+      "reduce-docker/datascience": 11113.09,
+      "reduce-docker/deeplearning": 9792.94,
+      "reduce-docker/jupyterhub-datascience": 11677.02,
+      "reduce-docker/jupyterhub-deeplearning": 11655.59
+    },
+    "total_mb": 49228.09,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 206.6,
+    "iteration": 39
+  },
+  {
+    "timestamp": "2026-04-01T12:17:43.009934+00:00",
+    "label": "cuda-torch-in-deeplearning",
+    "sizes_mb": {
+      "reduce-docker/base": 4989.45,
+      "reduce-docker/datascience": 11113.09,
+      "reduce-docker/deeplearning": 14703.94,
+      "reduce-docker/jupyterhub-datascience": 11677.02,
+      "reduce-docker/jupyterhub-deeplearning": 21492.26
+    },
+    "total_mb": 63975.76,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 268.4,
+    "iteration": 40
+  },
+  {
+    "timestamp": "2026-04-01T12:20:54.310241+00:00",
+    "label": "cuda-torch-no-deps",
+    "sizes_mb": {
+      "reduce-docker/base": 4989.45,
+      "reduce-docker/datascience": 11113.09,
+      "reduce-docker/deeplearning": 9792.94,
+      "reduce-docker/jupyterhub-datascience": 11677.02,
+      "reduce-docker/jupyterhub-deeplearning": 11655.59
+    },
+    "total_mb": 49228.09,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 141.9,
+    "iteration": 41
+  },
+  {
+    "timestamp": "2026-04-01T12:36:57.671264+00:00",
+    "label": "restore-torch-bin",
+    "sizes_mb": {
+      "reduce-docker/base": 5035.98,
+      "reduce-docker/datascience": 11159.61,
+      "reduce-docker/deeplearning": 9839.47,
+      "reduce-docker/jupyterhub-datascience": 11723.54,
+      "reduce-docker/jupyterhub-deeplearning": 11702.12
+    },
+    "total_mb": 49460.72,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 920.7,
+    "iteration": 42
+  },
+  {
+    "timestamp": "2026-04-01T12:37:01.911623+00:00",
+    "label": "restore-torch-bin",
+    "sizes_mb": {
+      "reduce-docker/base": 5035.98,
+      "reduce-docker/datascience": 11159.61,
+      "reduce-docker/deeplearning": 9839.47,
+      "reduce-docker/jupyterhub-datascience": 11723.54,
+      "reduce-docker/jupyterhub-deeplearning": 11702.12
+    },
+    "total_mb": 49460.72,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 317.9,
+    "iteration": 43
+  },
+  {
+    "timestamp": "2026-04-01T12:43:25.292078+00:00",
+    "label": "cuda-torch-cu126-no-deps",
+    "sizes_mb": {
+      "reduce-docker/base": 5035.98,
+      "reduce-docker/datascience": 11159.61,
+      "reduce-docker/deeplearning": 15638.79,
+      "reduce-docker/jupyterhub-datascience": 11723.54,
+      "reduce-docker/jupyterhub-deeplearning": 23314.11
+    },
+    "total_mb": 66872.03,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 309.1,
+    "iteration": 44
+  },
+  {
+    "timestamp": "2026-04-01T12:46:36.779735+00:00",
+    "label": "cleanup-noop-torch",
+    "sizes_mb": {
+      "reduce-docker/base": 5035.98,
+      "reduce-docker/datascience": 11159.61,
+      "reduce-docker/deeplearning": 9839.47,
+      "reduce-docker/jupyterhub-datascience": 11723.54,
+      "reduce-docker/jupyterhub-deeplearning": 11702.12
+    },
+    "total_mb": 49460.72,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 132.5,
+    "iteration": 45
+  },
+  {
+    "timestamp": "2026-04-01T12:50:47.091338+00:00",
+    "label": "test-cleanup-all-children",
+    "sizes_mb": {
+      "reduce-docker/base": 5035.98,
+      "reduce-docker/datascience": 11159.61,
+      "reduce-docker/deeplearning": 9831.71,
+      "reduce-docker/jupyterhub-datascience": 11720.52,
+      "reduce-docker/jupyterhub-deeplearning": 11682.94
+    },
+    "total_mb": 49430.76,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 205.6,
+    "iteration": 46
+  },
+  {
+    "timestamp": "2026-04-01T12:53:03.611572+00:00",
+    "label": "cleanup-igdiscover-env",
+    "sizes_mb": {
+      "reduce-docker/base": 5035.98,
+      "reduce-docker/datascience": 11112.69,
+      "reduce-docker/deeplearning": 9831.71,
+      "reduce-docker/jupyterhub-datascience": 11673.59,
+      "reduce-docker/jupyterhub-deeplearning": 11682.94
+    },
+    "total_mb": 49336.91,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 66.9,
+    "iteration": 47
+  },
+  {
+    "timestamp": "2026-04-01T13:08:49.980214+00:00",
+    "label": "remove-darwin-binaries",
+    "sizes_mb": {
+      "reduce-docker/base": 6246.44,
+      "reduce-docker/datascience": 12323.15,
+      "reduce-docker/deeplearning": 11042.17,
+      "reduce-docker/jupyterhub-datascience": 12884.05,
+      "reduce-docker/jupyterhub-deeplearning": 12893.4
+    },
+    "total_mb": 55389.21,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 875.1,
+    "iteration": 48
+  },
+  {
+    "timestamp": "2026-04-01T13:10:01.283696+00:00",
+    "label": "remove-darwin-binaries",
+    "sizes_mb": {
+      "reduce-docker/base": 6246.44,
+      "reduce-docker/datascience": 12323.15,
+      "reduce-docker/deeplearning": 11042.17,
+      "reduce-docker/jupyterhub-datascience": 12884.05,
+      "reduce-docker/jupyterhub-deeplearning": 12893.4
+    },
+    "total_mb": 55389.21,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 338.0,
+    "iteration": 49
+  },
+  {
+    "timestamp": "2026-04-01T13:10:29.566255+00:00",
+    "label": "verify-rebuild",
+    "sizes_mb": {
+      "reduce-docker/base": 6246.44,
+      "reduce-docker/datascience": 12323.15,
+      "reduce-docker/deeplearning": 11042.17,
+      "reduce-docker/jupyterhub-datascience": 12884.05,
+      "reduce-docker/jupyterhub-deeplearning": 12893.4
+    },
+    "total_mb": 55389.21,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 6.3,
+    "iteration": 50
+  },
+  {
+    "timestamp": "2026-04-01T13:26:59.874760+00:00",
+    "label": "targets-rm-at-end",
+    "sizes_mb": {
+      "reduce-docker/base": 5853.87,
+      "reduce-docker/datascience": 11930.59,
+      "reduce-docker/deeplearning": 10649.61,
+      "reduce-docker/jupyterhub-datascience": 12491.49,
+      "reduce-docker/jupyterhub-deeplearning": 12500.84
+    },
+    "total_mb": 53426.4,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 206.6,
+    "iteration": 51
+  },
+  {
+    "timestamp": "2026-04-01T13:27:00.693970+00:00",
+    "label": "targets-rm-at-end",
+    "sizes_mb": {
+      "reduce-docker/base": 5853.87,
+      "reduce-docker/datascience": 11930.59,
+      "reduce-docker/deeplearning": 10649.61,
+      "reduce-docker/jupyterhub-datascience": 12491.49,
+      "reduce-docker/jupyterhub-deeplearning": 12500.84
+    },
+    "total_mb": 53426.4,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 814.5,
+    "iteration": 52
+  },
+  {
+    "timestamp": "2026-04-01T13:41:05.967811+00:00",
+    "label": "fix-sysroot-cleanup",
+    "sizes_mb": {
+      "reduce-docker/base": 5357.37,
+      "reduce-docker/datascience": 11434.08,
+      "reduce-docker/deeplearning": 10153.1,
+      "reduce-docker/jupyterhub-datascience": 11994.98,
+      "reduce-docker/jupyterhub-deeplearning": 12004.33
+    },
+    "total_mb": 50943.86,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 772.0,
+    "iteration": 53
+  },
+  {
+    "timestamp": "2026-04-01T13:41:06.885319+00:00",
+    "label": "fix-sysroot-cleanup",
+    "sizes_mb": {
+      "reduce-docker/base": 5357.37,
+      "reduce-docker/datascience": 11434.08,
+      "reduce-docker/deeplearning": 10153.1,
+      "reduce-docker/jupyterhub-datascience": 11994.98,
+      "reduce-docker/jupyterhub-deeplearning": 12004.33
+    },
+    "total_mb": 50943.86,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 164.7,
+    "iteration": 54
+  },
+  {
+    "timestamp": "2026-04-01T13:54:38.461576+00:00",
+    "label": "fix-libexec-gcc-cleanup",
+    "sizes_mb": {
+      "reduce-docker/base": 5089.51,
+      "reduce-docker/datascience": 11166.22,
+      "reduce-docker/deeplearning": 9885.24,
+      "reduce-docker/jupyterhub-datascience": 11727.13,
+      "reduce-docker/jupyterhub-deeplearning": 11736.47
+    },
+    "total_mb": 49604.57,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 754.0,
+    "iteration": 55
+  },
+  {
+    "timestamp": "2026-04-01T13:54:50.564376+00:00",
+    "label": "fix-libexec-gcc-cleanup",
+    "sizes_mb": {
+      "reduce-docker/base": 5089.51,
+      "reduce-docker/datascience": 11166.22,
+      "reduce-docker/deeplearning": 9885.24,
+      "reduce-docker/jupyterhub-datascience": 11727.13,
+      "reduce-docker/jupyterhub-deeplearning": 11736.47
+    },
+    "total_mb": 49604.57,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 160.1,
+    "iteration": 56
+  },
+  {
+    "timestamp": "2026-04-01T14:13:19.729774+00:00",
+    "label": "remove-conda-include",
+    "sizes_mb": {
+      "reduce-docker/base": 5023.22,
+      "reduce-docker/datascience": 11099.94,
+      "reduce-docker/deeplearning": 9818.96,
+      "reduce-docker/jupyterhub-datascience": 11660.84,
+      "reduce-docker/jupyterhub-deeplearning": 11670.18
+    },
+    "total_mb": 49273.14,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 463.1,
+    "iteration": 57
+  },
+  {
+    "timestamp": "2026-04-01T14:27:15.814616+00:00",
+    "label": "remove-conda-pandoc",
+    "sizes_mb": {
+      "reduce-docker/base": 4869.09,
+      "reduce-docker/datascience": 10945.81,
+      "reduce-docker/deeplearning": 9664.83,
+      "reduce-docker/jupyterhub-datascience": 11506.71,
+      "reduce-docker/jupyterhub-deeplearning": 11516.05
+    },
+    "total_mb": 48502.49,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 166.5,
+    "iteration": 58
+  },
+  {
+    "timestamp": "2026-04-01T14:27:15.845551+00:00",
+    "label": "remove-conda-pandoc",
+    "sizes_mb": {
+      "reduce-docker/base": 4869.09,
+      "reduce-docker/datascience": 10945.81,
+      "reduce-docker/deeplearning": 9664.83,
+      "reduce-docker/jupyterhub-datascience": 11506.71,
+      "reduce-docker/jupyterhub-deeplearning": 11516.05
+    },
+    "total_mb": 48502.49,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 772.5,
+    "iteration": 59
+  },
+  {
+    "timestamp": "2026-04-01T14:40:42.982693+00:00",
+    "label": "cleanup-after-strip",
+    "sizes_mb": {
+      "reduce-docker/base": 5104.99,
+      "reduce-docker/datascience": 11181.7,
+      "reduce-docker/deeplearning": 9900.72,
+      "reduce-docker/jupyterhub-datascience": 11742.61,
+      "reduce-docker/jupyterhub-deeplearning": 11751.95
+    },
+    "total_mb": 49681.97,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 756.9,
+    "iteration": 60
+  },
+  {
+    "timestamp": "2026-04-01T14:40:44.822021+00:00",
+    "label": "cleanup-after-strip",
+    "sizes_mb": {
+      "reduce-docker/base": 5104.99,
+      "reduce-docker/datascience": 11181.7,
+      "reduce-docker/deeplearning": 9900.72,
+      "reduce-docker/jupyterhub-datascience": 11742.61,
+      "reduce-docker/jupyterhub-deeplearning": 11751.95
+    },
+    "total_mb": 49681.97,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 152.1,
+    "iteration": 61
+  },
+  {
+    "timestamp": "2026-04-01T14:54:16.787880+00:00",
+    "label": "remove-gir-data",
+    "sizes_mb": {
+      "reduce-docker/base": 5090.84,
+      "reduce-docker/datascience": 11167.56,
+      "reduce-docker/deeplearning": 9886.57,
+      "reduce-docker/jupyterhub-datascience": 11728.46,
+      "reduce-docker/jupyterhub-deeplearning": 11737.8
+    },
+    "total_mb": 49611.23,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 762.9,
+    "iteration": 62
+  },
+  {
+    "timestamp": "2026-04-01T14:54:25.937920+00:00",
+    "label": "remove-gir-data",
+    "sizes_mb": {
+      "reduce-docker/base": 5090.84,
+      "reduce-docker/datascience": 11167.56,
+      "reduce-docker/deeplearning": 9886.57,
+      "reduce-docker/jupyterhub-datascience": 11728.46,
+      "reduce-docker/jupyterhub-deeplearning": 11737.8
+    },
+    "total_mb": 49611.23,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 165.1,
+    "iteration": 63
+  },
+  {
+    "timestamp": "2026-04-01T15:11:33.481357+00:00",
+    "label": "fix-darwin-dir-cleanup",
+    "sizes_mb": {
+      "reduce-docker/base": 4708.04,
+      "reduce-docker/datascience": 10784.76,
+      "reduce-docker/deeplearning": 9503.77,
+      "reduce-docker/jupyterhub-datascience": 11345.66,
+      "reduce-docker/jupyterhub-deeplearning": 11355.0
+    },
+    "total_mb": 47697.23,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 326.3,
+    "iteration": 64
+  },
+  {
+    "timestamp": "2026-04-01T15:14:36.819355+00:00",
+    "label": "cleanup-igdiscover-docs",
+    "sizes_mb": {
+      "reduce-docker/base": 4708.04,
+      "reduce-docker/datascience": 10761.14,
+      "reduce-docker/deeplearning": 9503.77,
+      "reduce-docker/jupyterhub-datascience": 11322.04,
+      "reduce-docker/jupyterhub-deeplearning": 11355.0
+    },
+    "total_mb": 47649.99,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 122.1,
+    "iteration": 65
+  },
+  {
+    "timestamp": "2026-04-01T15:29:51.879499+00:00",
+    "label": "remove-texlive-source-tex4ht",
+    "sizes_mb": {
+      "reduce-docker/base": 4681.8,
+      "reduce-docker/datascience": 10734.9,
+      "reduce-docker/deeplearning": 9477.53,
+      "reduce-docker/jupyterhub-datascience": 11295.8,
+      "reduce-docker/jupyterhub-deeplearning": 11328.76
+    },
+    "total_mb": 47518.79,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 858.6,
+    "iteration": 66
+  },
+  {
+    "timestamp": "2026-04-01T15:33:23.357785+00:00",
+    "label": "remove-texlive-source-tex4ht",
+    "sizes_mb": {
+      "reduce-docker/base": 4681.8,
+      "reduce-docker/datascience": 10734.9,
+      "reduce-docker/deeplearning": 9477.53,
+      "reduce-docker/jupyterhub-datascience": 11295.8,
+      "reduce-docker/jupyterhub-deeplearning": 11328.76
+    },
+    "total_mb": 47518.79,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 464.1,
+    "iteration": 67
+  },
+  {
+    "timestamp": "2026-04-01T15:49:12.833841+00:00",
+    "label": "remove-unused-tex-formats",
+    "sizes_mb": {
+      "reduce-docker/base": 4604.78,
+      "reduce-docker/datascience": 10657.88,
+      "reduce-docker/deeplearning": 9400.52,
+      "reduce-docker/jupyterhub-datascience": 11218.78,
+      "reduce-docker/jupyterhub-deeplearning": 11251.74
+    },
+    "total_mb": 47133.7,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 904.9,
+    "iteration": 68
+  },
+  {
+    "timestamp": "2026-04-01T15:50:06.512221+00:00",
+    "label": "remove-unused-tex-formats",
+    "sizes_mb": {
+      "reduce-docker/base": 4604.78,
+      "reduce-docker/datascience": 10657.88,
+      "reduce-docker/deeplearning": 9400.52,
+      "reduce-docker/jupyterhub-datascience": 11218.78,
+      "reduce-docker/jupyterhub-deeplearning": 11251.74
+    },
+    "total_mb": 47133.7,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 351.5,
+    "iteration": 69
+  },
+  {
+    "timestamp": "2026-04-01T15:54:19.897649+00:00",
+    "label": "remove-npp-libs",
+    "sizes_mb": {
+      "reduce-docker/base": 4604.78,
+      "reduce-docker/datascience": 10657.88,
+      "reduce-docker/deeplearning": 9007.5,
+      "reduce-docker/jupyterhub-datascience": 11218.78,
+      "reduce-docker/jupyterhub-deeplearning": 10858.73
+    },
+    "total_mb": 46347.67,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 139.3,
+    "iteration": 70
+  },
+  {
+    "timestamp": "2026-04-01T15:57:17.628730+00:00",
+    "label": "remove-cusolverMg",
+    "sizes_mb": {
+      "reduce-docker/base": 4604.78,
+      "reduce-docker/datascience": 10657.88,
+      "reduce-docker/deeplearning": 8824.24,
+      "reduce-docker/jupyterhub-datascience": 11218.78,
+      "reduce-docker/jupyterhub-deeplearning": 10675.47
+    },
+    "total_mb": 45981.15,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 147.2,
+    "iteration": 71
+  },
+  {
+    "timestamp": "2026-04-01T16:01:27.483056+00:00",
+    "label": "cuda-libraries-runtime-only",
+    "sizes_mb": {
+      "reduce-docker/base": 4604.78,
+      "reduce-docker/datascience": 10657.88,
+      "reduce-docker/deeplearning": 8823.51,
+      "reduce-docker/jupyterhub-datascience": 11218.78,
+      "reduce-docker/jupyterhub-deeplearning": 10674.61
+    },
+    "total_mb": 45979.56,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 143.6,
+    "iteration": 72
+  },
+  {
+    "timestamp": "2026-04-01T16:05:29.061256+00:00",
+    "label": "strip-cuda-with-binutils",
+    "sizes_mb": {
+      "reduce-docker/base": 4604.78,
+      "reduce-docker/datascience": 10657.88,
+      "reduce-docker/deeplearning": 9833.63,
+      "reduce-docker/jupyterhub-datascience": 11218.78,
+      "reduce-docker/jupyterhub-deeplearning": 11420.46
+    },
+    "total_mb": 47735.53,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 189.0,
+    "iteration": 73
+  },
+  {
+    "timestamp": "2026-04-01T16:06:00.781812+00:00",
+    "label": "verify-after-revert",
+    "sizes_mb": {
+      "reduce-docker/base": 4604.78,
+      "reduce-docker/datascience": 10657.88,
+      "reduce-docker/deeplearning": 8823.51,
+      "reduce-docker/jupyterhub-datascience": 11218.78,
+      "reduce-docker/jupyterhub-deeplearning": 10674.61
+    },
+    "total_mb": 45979.56,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 5.8,
+    "iteration": 74
+  },
+  {
+    "timestamp": "2026-04-01T16:08:47.287746+00:00",
+    "label": "remove-cudart-dev",
+    "sizes_mb": {
+      "reduce-docker/base": 4604.78,
+      "reduce-docker/datascience": 10657.88,
+      "reduce-docker/deeplearning": 8823.51,
+      "reduce-docker/jupyterhub-datascience": 11218.78,
+      "reduce-docker/jupyterhub-deeplearning": 10674.61
+    },
+    "total_mb": 45979.56,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 137.6,
+    "iteration": 75
+  },
+  {
+    "timestamp": "2026-04-01T16:29:31.185303+00:00",
+    "label": "remove-easel-share",
+    "sizes_mb": {
+      "reduce-docker/base": 4588.49,
+      "reduce-docker/datascience": 10641.59,
+      "reduce-docker/deeplearning": 8807.22,
+      "reduce-docker/jupyterhub-datascience": 11202.49,
+      "reduce-docker/jupyterhub-deeplearning": 10658.32
+    },
+    "total_mb": 45898.11,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 517.9,
+    "iteration": 76
+  },
+  {
+    "timestamp": "2026-04-01T16:31:01.086459+00:00",
+    "label": "add-dockerignore",
+    "sizes_mb": {
+      "reduce-docker/base": 4588.49,
+      "reduce-docker/datascience": 10641.59,
+      "reduce-docker/deeplearning": 8807.22,
+      "reduce-docker/jupyterhub-datascience": 11202.49,
+      "reduce-docker/jupyterhub-deeplearning": 10658.32
+    },
+    "total_mb": 45898.11,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 7.0,
+    "iteration": 77
+  },
+  {
+    "timestamp": "2026-04-01T16:39:45.688355+00:00",
+    "label": "remove-libflite",
+    "sizes_mb": {
+      "reduce-docker/base": 4588.51,
+      "reduce-docker/datascience": 10641.75,
+      "reduce-docker/deeplearning": 8807.23,
+      "reduce-docker/jupyterhub-datascience": 11202.65,
+      "reduce-docker/jupyterhub-deeplearning": 10658.33
+    },
+    "total_mb": 45898.47,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 445.7,
+    "iteration": 78
+  },
+  {
+    "timestamp": "2026-04-01T16:42:41.166734+00:00",
+    "label": "remove-explicit-cuda-runtime",
+    "sizes_mb": {
+      "reduce-docker/base": 4588.49,
+      "reduce-docker/datascience": 10641.59,
+      "reduce-docker/deeplearning": 8807.23,
+      "reduce-docker/jupyterhub-datascience": 11202.49,
+      "reduce-docker/jupyterhub-deeplearning": 10658.33
+    },
+    "total_mb": 45898.13,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "failed",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 104.9,
+    "iteration": 79
+  },
+  {
+    "timestamp": "2026-04-01T16:44:06.091327+00:00",
+    "label": "remove-easel-share",
+    "sizes_mb": {
+      "reduce-docker/base": 4588.49,
+      "reduce-docker/datascience": 8535.63,
+      "reduce-docker/deeplearning": 8807.22,
+      "reduce-docker/jupyterhub-datascience": 9096.53,
+      "reduce-docker/jupyterhub-deeplearning": 10658.33
+    },
+    "total_mb": 41686.2,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "failed"
+    },
+    "elapsed_seconds": 2000.5,
+    "iteration": 80
+  },
+  {
+    "timestamp": "2026-04-01T16:46:50.887316+00:00",
+    "label": "verify-current-state",
+    "sizes_mb": {
+      "reduce-docker/base": 4588.49,
+      "reduce-docker/datascience": 8535.63,
+      "reduce-docker/deeplearning": 8807.22,
+      "reduce-docker/jupyterhub-datascience": 9096.53,
+      "reduce-docker/jupyterhub-deeplearning": 10658.33
+    },
+    "total_mb": 41686.2,
+    "build_status": {
+      "reduce-docker/base": "failed",
+      "reduce-docker/datascience": "failed",
+      "reduce-docker/deeplearning": "failed",
+      "reduce-docker/jupyterhub-datascience": "failed",
+      "reduce-docker/jupyterhub-deeplearning": "failed"
+    },
+    "elapsed_seconds": 6.3,
+    "iteration": 81
+  },
+  {
+    "timestamp": "2026-04-01T17:04:16.626426+00:00",
+    "label": "clean-rebuild",
+    "sizes_mb": {
+      "reduce-docker/base": 4588.49,
+      "reduce-docker/datascience": 10641.59,
+      "reduce-docker/deeplearning": 8807.22,
+      "reduce-docker/jupyterhub-datascience": 11202.49,
+      "reduce-docker/jupyterhub-deeplearning": 10658.32
+    },
+    "total_mb": 45898.11,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 1011.2,
+    "iteration": 82
+  },
+  {
+    "timestamp": "2026-04-01T17:04:36.710164+00:00",
+    "label": "clean-rebuild",
+    "sizes_mb": {
+      "reduce-docker/base": 4588.49,
+      "reduce-docker/datascience": 10641.59,
+      "reduce-docker/deeplearning": 8807.22,
+      "reduce-docker/jupyterhub-datascience": 11202.49,
+      "reduce-docker/jupyterhub-deeplearning": 10658.32
+    },
+    "total_mb": 45898.11,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 425.6,
+    "iteration": 83
+  },
+  {
+    "timestamp": "2026-04-01T17:22:12.922554+00:00",
+    "label": "remove-r-cpp-headers",
+    "sizes_mb": {
+      "reduce-docker/base": 4434.04,
+      "reduce-docker/datascience": 10487.14,
+      "reduce-docker/deeplearning": 8652.77,
+      "reduce-docker/jupyterhub-datascience": 11048.04,
+      "reduce-docker/jupyterhub-deeplearning": 10503.87
+    },
+    "total_mb": 45125.86,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 340.0,
+    "iteration": 84
+  },
+  {
+    "timestamp": "2026-04-01T17:22:12.997406+00:00",
+    "label": "remove-r-cpp-headers",
+    "sizes_mb": {
+      "reduce-docker/base": 4434.04,
+      "reduce-docker/datascience": 10487.14,
+      "reduce-docker/deeplearning": 8652.77,
+      "reduce-docker/jupyterhub-datascience": 11048.04,
+      "reduce-docker/jupyterhub-deeplearning": 10503.87
+    },
+    "total_mb": 45125.86,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 946.8,
+    "iteration": 85
+  },
+  {
+    "timestamp": "2026-04-01T17:39:01.160871+00:00",
+    "label": "remove-r-vignettes",
+    "sizes_mb": {
+      "reduce-docker/base": 4343.59,
+      "reduce-docker/datascience": 10396.68,
+      "reduce-docker/deeplearning": 8562.31,
+      "reduce-docker/jupyterhub-datascience": 10957.58,
+      "reduce-docker/jupyterhub-deeplearning": 10413.41
+    },
+    "total_mb": 44673.57,
+    "build_status": {
+      "reduce-docker/base": "success",
+      "reduce-docker/datascience": "success",
+      "reduce-docker/deeplearning": "success",
+      "reduce-docker/jupyterhub-datascience": "success",
+      "reduce-docker/jupyterhub-deeplearning": "success"
+    },
+    "elapsed_seconds": 952.8,
+    "iteration": 86
+  }
+]
