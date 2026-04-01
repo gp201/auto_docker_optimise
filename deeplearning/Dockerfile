@@ -52,7 +52,8 @@ RUN rm -rf "/home/${NB_USER}/.cache/" \
     && find "${CONDA_DIR}" -name 'libnvrtc-builtins.alt*' -delete \
     && find "${CONDA_DIR}" -name 'libnppi*.so*' -delete \
     && find "${CONDA_DIR}" -name 'libnppc*.so*' -delete \
-    && find "${CONDA_DIR}" -name 'libnpps*.so*' -delete
+    && find "${CONDA_DIR}" -name 'libnpps*.so*' -delete \
+    && find "${CONDA_DIR}" -name 'libcusolverMg*.so*' -delete
 
 
 # ----------------------------
