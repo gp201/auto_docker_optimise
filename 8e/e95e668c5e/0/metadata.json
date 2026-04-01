@@ -1,0 +1,33 @@
+{
+  "cli_version": "0.5.2",
+  "checkpoint_id": "8ee95e668c5e",
+  "session_id": "2e19ada6-556e-41ee-b902-959f18947ac4",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-01T09:04:08.699530564Z",
+  "branch": "optimize/apr1",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "datascience/Dockerfile"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-6[1m]",
+  "turn_id": "c283610245ad",
+  "checkpoint_transcript_start": 164,
+  "transcript_lines_at_start": 164,
+  "token_usage": {
+    "input_tokens": 5,
+    "cache_creation_tokens": 3136,
+    "cache_read_tokens": 338468,
+    "output_tokens": 1222,
+    "api_call_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-01T09:04:08.618085669Z",
+    "agent_lines": 3,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 3,
+    "agent_percentage": 100
+  }
+}
