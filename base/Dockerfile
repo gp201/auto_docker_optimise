@@ -240,7 +240,7 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && find "${CONDA_DIR}" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/python3.12/site-packages" -type d \( -name 'tests' -o -name 'test' \) -exec rm -rf {} + 2>/dev/null || true \
     && rm -rf "${CONDA_DIR}/lib/python3.12/site-packages/torch/include" \
-    && find "${CONDA_DIR}/lib/python3.12/site-packages/abutils/binaries" -name '*darwin*' -delete \
+    && find "${CONDA_DIR}/lib/python3.12/site-packages/abutils/binaries" -name '*darwin*' -exec rm -rf {} + 2>/dev/null || true \
     && rm -rf "${CONDA_DIR}/pkgs" \
     && find "${CONDA_DIR}" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
     #--- final cleanup (must be after strip which can create dirs) ---
