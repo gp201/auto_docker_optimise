@@ -70,11 +70,15 @@ RUN apt-get update --yes \
     && tar xf "cellranger-8.0.1.tar" \
     && rm "cellranger-8.0.1.tar" \
     && chmod -R 777 "${NGS_TOOLS_DIR}/cellranger-8.0.1" \
+    && rm -rf "${NGS_TOOLS_DIR}/cellranger-8.0.1/external/cellranger_tiny_ref" \
+    && rm -rf "${NGS_TOOLS_DIR}/cellranger-8.0.1/external/cellranger_tiny_fastq" \
     #--- dorado ---
     && wget -q "https://brineylab.s3.amazonaws.com/tools/dorado-0.7.0-linux-x64.tar.gz" \
     && tar xzf "dorado-0.7.0-linux-x64.tar.gz" \
     && rm "dorado-0.7.0-linux-x64.tar.gz" \
     && chmod -R 777 "${NGS_TOOLS_DIR}/dorado-0.7.0-linux-x64" \
+    && strip --strip-unneeded "${NGS_TOOLS_DIR}/dorado-0.7.0-linux-x64/lib/libdorado_torch_lib.so" 2>/dev/null || true \
+    && strip --strip-unneeded "${NGS_TOOLS_DIR}/dorado-0.7.0-linux-x64/bin/dorado" 2>/dev/null || true \
     #--- cleanup build deps and caches ---
     && rm -rf "${NGS_TOOLS_DIR}/pandaseq" \
     && rm -rf "${NGS_TOOLS_DIR}/sickle/.git" \
