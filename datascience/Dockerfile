@@ -59,13 +59,7 @@ RUN apt-get update --yes \
     && make install \
     && ldconfig \
     && cd "${NGS_TOOLS_DIR}" \
-    #--- sickle ---
-    && git clone -b v1.2.11 "https://github.com/madler/zlib/" \
-    && cd zlib \
-    && ./configure \
-    && make \
-    && make install \
-    && cd "${NGS_TOOLS_DIR}" \
+    #--- sickle (uses system zlib from zlib1g-dev) ---
     && git clone "https://github.com/najoshi/sickle" \
     && cd sickle \
     && make \
@@ -82,7 +76,8 @@ RUN apt-get update --yes \
     && rm "dorado-0.7.0-linux-x64.tar.gz" \
     && chmod -R 777 "${NGS_TOOLS_DIR}/dorado-0.7.0-linux-x64" \
     #--- cleanup build deps and caches ---
-    && rm -rf "${NGS_TOOLS_DIR}/pandaseq" "${NGS_TOOLS_DIR}/zlib" \
+    && rm -rf "${NGS_TOOLS_DIR}/pandaseq" \
+    && rm -rf "${NGS_TOOLS_DIR}/sickle/.git" \
     && apt-get purge -y libtool automake pkg-config \
     && apt-get autoremove -y \
     && apt-get clean \
