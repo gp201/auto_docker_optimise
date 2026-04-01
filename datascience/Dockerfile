@@ -72,6 +72,11 @@ RUN apt-get update --yes \
     && chmod -R 777 "${NGS_TOOLS_DIR}/cellranger-8.0.1" \
     && rm -rf "${NGS_TOOLS_DIR}/cellranger-8.0.1/external/cellranger_tiny_ref" \
     && rm -rf "${NGS_TOOLS_DIR}/cellranger-8.0.1/external/cellranger_tiny_fastq" \
+    && find "${NGS_TOOLS_DIR}/cellranger-8.0.1" -name '*.a' -delete \
+    && find "${NGS_TOOLS_DIR}/cellranger-8.0.1" -name '*.pyc' -delete \
+    && find "${NGS_TOOLS_DIR}/cellranger-8.0.1" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
+    && find "${NGS_TOOLS_DIR}/cellranger-8.0.1" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
+    && find "${NGS_TOOLS_DIR}/cellranger-8.0.1" -name '*.so.*' -exec strip --strip-unneeded {} + 2>/dev/null || true \
     #--- dorado ---
     && wget -q "https://brineylab.s3.amazonaws.com/tools/dorado-0.7.0-linux-x64.tar.gz" \
     && tar xzf "dorado-0.7.0-linux-x64.tar.gz" \
