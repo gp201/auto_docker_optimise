@@ -1,0 +1,28 @@
+{
+  "cli_version": "0.5.2",
+  "checkpoint_id": "8ed8b41ec2f9",
+  "strategy": "manual-commit",
+  "branch": "optimize/apr1",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "datascience/Dockerfile",
+    "deeplearning/Dockerfile",
+    "jupyterhub/datascience/Dockerfile",
+    "jupyterhub/deeplearning/Dockerfile"
+  ],
+  "sessions": [
+    {
+      "metadata": "/8e/d8b41ec2f9/0/metadata.json",
+      "transcript": "/8e/d8b41ec2f9/0/full.jsonl",
+      "content_hash": "/8e/d8b41ec2f9/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 9,
+    "cache_creation_tokens": 3664,
+    "cache_read_tokens": 577537,
+    "output_tokens": 2097,
+    "api_call_count": 9
+  }
+}
