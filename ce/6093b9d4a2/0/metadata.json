@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.5.2",
+  "checkpoint_id": "ce6093b9d4a2",
+  "session_id": "2e19ada6-556e-41ee-b902-959f18947ac4",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-01T08:09:02.782788517Z",
+  "branch": "optimize/apr1",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "jupyterhub/datascience/Dockerfile",
+    "jupyterhub/deeplearning/Dockerfile"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-6[1m]",
+  "turn_id": "c283610245ad",
+  "checkpoint_transcript_start": 78,
+  "transcript_lines_at_start": 78,
+  "token_usage": {
+    "input_tokens": 7,
+    "cache_creation_tokens": 4527,
+    "cache_read_tokens": 335547,
+    "output_tokens": 3283,
+    "api_call_count": 7
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-01T08:09:02.728980495Z",
+    "agent_lines": 19,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 19,
+    "agent_percentage": 100
+  }
+}
