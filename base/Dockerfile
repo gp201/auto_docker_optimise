@@ -256,6 +256,7 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && rm -rf "${CONDA_DIR}/targets" \
     && rm -rf /opt/conda/libexec/gcc \
     && rm -rf /opt/conda/include \
+    && rm -f /opt/conda/bin/pandoc \
     && rm -rf /opt/conda/x86_64-conda-linux-gnu/sysroot/lib64/locale \
     && rm -rf /opt/conda/x86_64-conda-linux-gnu/sysroot/lib64/gconv \
     && rm -f /opt/conda/bin/x86_64-conda-linux-gnu-* \
