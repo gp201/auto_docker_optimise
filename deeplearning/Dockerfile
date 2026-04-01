@@ -42,7 +42,10 @@ RUN rm -rf "/home/${NB_USER}/.cache/" \
     && find "${CONDA_DIR}" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
     && rm -rf "${CONDA_DIR}/pkgs" \
     && find "${CONDA_DIR}" -name '*.so' -exec strip --strip-unneeded {} + 2>/dev/null || true \
-    && rm -rf "${CONDA_DIR}/share/doc" "${CONDA_DIR}/share/man" "${CONDA_DIR}/share/gtk-doc"
+    && rm -rf "${CONDA_DIR}/share/doc" "${CONDA_DIR}/share/man" "${CONDA_DIR}/share/gtk-doc" \
+    && rm -rf "${CONDA_DIR}/targets/x86_64-linux/lib/stubs" \
+    && rm -rf "${CONDA_DIR}/targets/x86_64-linux/include" \
+    && rm -rf "${CONDA_DIR}/include/cuda" "${CONDA_DIR}/include/cub"
 
 
 # ----------------------------
