@@ -123,6 +123,9 @@ RUN apt-get update --yes \
     && rm -rf /usr/share/texmf/doc \
     && rm -rf /usr/share/texlive/texmf-dist/source \
     && rm -rf /usr/share/texlive/texmf-dist/tex4ht \
+    && rm -rf /var/lib/texmf/web2c/pdftex \
+    && rm -rf /var/lib/texmf/web2c/luatex \
+    && rm -rf /var/lib/texmf/web2c/luahbtex \
     && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen
 
