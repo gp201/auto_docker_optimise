@@ -1,0 +1,33 @@
+{
+  "cli_version": "0.5.2",
+  "checkpoint_id": "591058c62bd4",
+  "session_id": "2e19ada6-556e-41ee-b902-959f18947ac4",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-01T08:14:56.193795341Z",
+  "branch": "optimize/apr1",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "deeplearning/Dockerfile"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-4-6[1m]",
+  "turn_id": "c283610245ad",
+  "checkpoint_transcript_start": 106,
+  "transcript_lines_at_start": 106,
+  "token_usage": {
+    "input_tokens": 3,
+    "cache_creation_tokens": 1682,
+    "cache_read_tokens": 160522,
+    "output_tokens": 676,
+    "api_call_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-01T08:14:56.137757196Z",
+    "agent_lines": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 0,
+    "agent_percentage": 0
+  }
+}
