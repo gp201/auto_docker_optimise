@@ -97,6 +97,21 @@ def save_results(results: list[dict]) -> None:
     RESULTS_FILE.write_text(json.dumps(results, indent=2) + "\n")
 
 
+def resolve_with_deps(images_to_build: list[str]) -> list[str]:
+    """Expand a list of image names to include all transitive dependencies."""
+    needed = set(images_to_build)
+    changed = True
+    while changed:
+        changed = False
+        for img in list(needed):
+            parent = BUILD_DEPS.get(img)
+            if parent and parent not in needed:
+                needed.add(parent)
+                changed = True
+    # Return in IMAGES order so parents are built before children
+    return [name for name, _ in IMAGES if name in needed]
+
+
 def measure(
     images_to_build: list[str] | None = None,
     label: str = "",
@@ -107,6 +122,7 @@ def measure(
 
     Args:
         images_to_build: List of image names to build (None = all).
+            Dependency images are always built first automatically.
         label: Label for this measurement (e.g., "baseline", optimization description).
         build: Whether to build images before measuring.
 
@@ -115,7 +131,8 @@ def measure(
     """
     targets = IMAGES
     if images_to_build:
-        targets = [(n, d) for n, d in IMAGES if n in images_to_build]
+        resolved = resolve_with_deps(images_to_build)
+        targets = [(n, d) for n, d in IMAGES if n in resolved]
 
     sizes = {}
     build_status = {}
