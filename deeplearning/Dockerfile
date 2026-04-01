@@ -49,7 +49,10 @@ RUN rm -rf "/home/${NB_USER}/.cache/" \
     && rm -rf "${CONDA_DIR}/targets/x86_64-linux/include" \
     && rm -rf "${CONDA_DIR}/include/cuda" "${CONDA_DIR}/include/cub" \
     && find "${CONDA_DIR}" -name 'libnvrtc.alt*' -delete \
-    && find "${CONDA_DIR}" -name 'libnvrtc-builtins.alt*' -delete
+    && find "${CONDA_DIR}" -name 'libnvrtc-builtins.alt*' -delete \
+    && find "${CONDA_DIR}" -name 'libnppi*.so*' -delete \
+    && find "${CONDA_DIR}" -name 'libnppc*.so*' -delete \
+    && find "${CONDA_DIR}" -name 'libnpps*.so*' -delete
 
 
 # ----------------------------
