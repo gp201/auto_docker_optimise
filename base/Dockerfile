@@ -243,6 +243,8 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && rm -rf "${CONDA_DIR}/share/man" \
     && rm -rf "${CONDA_DIR}/share/gtk-doc" \
     && rm -rf "${CONDA_DIR}/man" \
+    && rm -rf "${CONDA_DIR}/share/info" \
+    && rm -rf "${CONDA_DIR}/share/locale" \
     && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/lib64/locale" \
     && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/lib64/gconv" \
     && rm -rf "${CONDA_DIR}/targets" \
