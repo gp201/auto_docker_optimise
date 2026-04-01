@@ -118,6 +118,8 @@ RUN apt-get update --yes \
         gcc \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /usr/share/doc /usr/share/info \
+    && find /usr/share/man -type f -delete \
     && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen
 
@@ -230,6 +232,14 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
         )" \
     #--- cleanup ---
     && rm -rf "/home/${NB_USER}/.cache/" \
+    && find "${CONDA_DIR}" -name '*.a' -delete \
+    && find "${CONDA_DIR}" -name '*.pyc' -delete \
+    && find "${CONDA_DIR}" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true \
+    && rm -rf "${CONDA_DIR}/pkgs" \
+    && rm -rf "${CONDA_DIR}/share/doc" \
+    && rm -rf "${CONDA_DIR}/share/man" \
+    && rm -rf "${CONDA_DIR}/share/gtk-doc" \
+    && rm -rf "${CONDA_DIR}/man" \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}"
 
