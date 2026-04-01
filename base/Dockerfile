@@ -258,6 +258,7 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && rm -rf "${CONDA_DIR}/man" \
     && rm -rf "${CONDA_DIR}/share/info" \
     && rm -rf "${CONDA_DIR}/share/locale" \
+    && rm -rf "${CONDA_DIR}/share/gir-1.0" \
     && rm -rf "${CONDA_DIR}/lib/R/doc" \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "help" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "html" -exec rm -rf {} + 2>/dev/null || true \
