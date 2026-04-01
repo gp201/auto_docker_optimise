@@ -215,6 +215,8 @@ COPY --chown=${NB_UID}:${NB_GID} ./requirements/r_cran.txt ${REQUIREMENTS_DIR}/r
 RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && mamba install --yes --file ${REQUIREMENTS_DIR}/r_mamba.txt \
     && mamba clean --all -f -y \
+    #--- install CPU-only torch first (harmonypy depends on torch, avoid pulling CUDA libs) ---
+    && python3 -m pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu \
     #--- ab[x] and dependencies ---
     && python3 -m pip install --no-cache-dir -r ${REQUIREMENTS_DIR}/abx_pip.txt \
     && python3 -m pip install --no-cache-dir \
