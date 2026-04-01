@@ -121,6 +121,8 @@ RUN apt-get update --yes \
     && find /usr/share/man -type f -delete \
     && rm -rf /usr/share/texlive/texmf-dist/doc \
     && rm -rf /usr/share/texmf/doc \
+    && rm -rf /usr/share/texlive/texmf-dist/source \
+    && rm -rf /usr/share/texlive/texmf-dist/tex4ht \
     && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen
 
