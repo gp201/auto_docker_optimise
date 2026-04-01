@@ -247,6 +247,8 @@ RUN mamba install --yes --file "${REQUIREMENTS_DIR}/scipy_mamba.txt" \
     && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/lib64/gconv" \
     && rm -rf "${CONDA_DIR}/targets" \
     && rm -rf "${CONDA_DIR}/libexec/gcc" \
+    && rm -f "${CONDA_DIR}/bin/x86_64-conda-linux-gnu-"* \
+    && rm -rf "${CONDA_DIR}/x86_64-conda-linux-gnu/sysroot/usr" \
     && rm -rf "${CONDA_DIR}/lib/R/doc" \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "help" -exec rm -rf {} + 2>/dev/null || true \
     && find "${CONDA_DIR}/lib/R/library" -type d -name "html" -exec rm -rf {} + 2>/dev/null || true \
